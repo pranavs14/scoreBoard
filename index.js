@@ -15,3 +15,11 @@ function guestScore(num){
     guest += num;
     guestScoreElem.textContent = guest;
 }
+
+document.querySelectorAll('.score-increment button').forEach(button => {
+    button.addEventListener('click', () => {
+        const isHome = button.parentElement.previousElementSibling.id === "home-score";
+        const increment = parseInt(button.textContent);
+        isHome ? homeScore(increment) : guestScore(increment);
+    });
+});
