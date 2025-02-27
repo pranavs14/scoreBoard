@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background: #1B244A;
+    color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+h3{
+    font-family: "Press Start 2P", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35.89px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-container{
+    width: 180px;
+    height: 180px;
+    top: 125px;
+    left: 337px;
+    border-radius: 5px;
+    background: #080001;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.score-container:hover{
+    background: #1B244A;
+}
+
+.score-count{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 126.67px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #66FF00;
+}
+
+.score-increment{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-increment button{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: #1B244A;
+    border: 2px dashed #9AABD8;
+    outline: none;
+    color: #9AABD8;
+    font-family: "Press Start 2P", serif;
+    font-size: 12px;
+}
+
+.score-increment button:active{
+    background-color: #9AABD8;
+}
+
