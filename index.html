@@ -4,7 +4,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -31,6 +30,24 @@
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
+        <script>
+            const homeScoreElem = document.getElementById("home-score");
+            const guestScoreElem = document.getElementById("guest-score");
+            let home = 0;
+            let guest = 0;
+            
+            homeScore.textContent = home;
+            guestScore.textContent = guest;
+            
+            function homeScore(num){
+                home += num;
+                homeScoreElem.textContent = home;
+            }
+            
+            function guestScore(num){
+                guest += num;
+                guestScoreElem.textContent = guest;
+            }
+        </script>
     </body>
 </html>
